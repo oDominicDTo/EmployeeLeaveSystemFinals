@@ -10,7 +10,6 @@ namespace EmployeeLeaveSystemFinal
     public class LeaveMenu
 
     {
-
         public static void SickLeaveUI()
         {
 

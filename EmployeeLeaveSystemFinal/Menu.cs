@@ -16,8 +16,6 @@ namespace EmployeeLeaveSystemFinal
 
             try
             {
-
-
                 do
                 {
                     Console.WriteLine("*** Welcome to Employee Leave Management System ***");

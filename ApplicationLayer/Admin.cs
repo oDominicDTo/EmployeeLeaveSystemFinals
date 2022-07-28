@@ -5,7 +5,6 @@ namespace ApplicationLayer
 {
     public class Admin
     {
-
         public static bool ValidateEmployeeID(string EmployeeID, string Name)
         {
 

@@ -29,7 +29,6 @@ namespace DataLayer
             this.PassWord = adminPass;
         }
 
-
         public static void CreateSickList()
         {
 

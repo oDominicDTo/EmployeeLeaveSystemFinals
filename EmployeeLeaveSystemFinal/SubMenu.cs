@@ -10,7 +10,6 @@ namespace EmployeeLeaveSystemFinal
 {
     public class SubMenu
     {
-
         public static int returnInput = 0;
         public static void LeaveReqUI()
         {

@@ -15,7 +15,6 @@ namespace ApplicationLayer
         {
 
 
-
             string text = string.Format("|{0,-30}|{1,-30}|{2,-15}|{3,-30}", "Employee ID", "Name", "Days of Leave", "Type of Leave");
 
             string text2 = string.Format("|{0,-30}|{1,-30}|{2,-15}|{3,-30}", employeeIDname, name, days, "Vacation Leave");
