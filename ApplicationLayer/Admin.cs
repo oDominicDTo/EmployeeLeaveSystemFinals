@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using DataLayer;
 using System.Text;
-using System.Threading.Tasks;
-using DataLayer;
 
 namespace ApplicationLayer
 {
@@ -21,20 +17,55 @@ namespace ApplicationLayer
         {
             bool returnValid = false;
 
-            List<string> lines = File.ReadAllLines(Data.data_path_e).ToList();
-            foreach (string line in lines)
+
+            string lines = File.ReadAllText(Data.data_path_e);
+
+            if (lines.Contains(EmployeeID))
             {
-                if (line.Contains(EmployeeID))
-                {
 
-                    returnValid = true;
+                returnValid = true;
 
-                }
-                else { returnValid = false; }
             }
+            else { returnValid = false; }
             return returnValid;
-        }
 
+        }
+    
+
+        /*   public static bool ValidateID(string EmployeeID)
+          {
+              bool returnValid = false;
+               List<string> lines = File.ReadAllLines(Data.data_path_e).ToList();
+
+              foreach (string line in lines)
+               {
+
+                   if (Regex.IsMatch(line,input))
+                   {
+
+                       returnValid = true;
+
+                   }
+                   else { returnValid = false; }
+
+                  var input = "|" + EmployeeID;
+
+                 foreach (string line in lines)
+                      {
+
+                         if (line.Contains(input))
+                       {
+
+                   //returnValid = true;
+                   return "1";
+               }
+               else 
+               {
+                   //returnValid = false;
+                   return "0";
+               }
+           }*/
+       
 
         public static string ViewSickLeaveEmployee()
         {

@@ -27,9 +27,8 @@ namespace DataLayer
             Days = days;
             this.UserName = adminUserName;
             this.PassWord = adminPass;
-
-
         }
+
 
         public static void CreateSickList()
         {

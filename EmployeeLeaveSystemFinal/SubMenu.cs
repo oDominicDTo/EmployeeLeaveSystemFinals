@@ -176,6 +176,7 @@ namespace EmployeeLeaveSystemFinal
                                     Console.WriteLine("List is Empty");
                                     Console.ReadKey();
                                     Console.Clear();
+                                    SubMenu.AdminSelection();
 
                                 }
                                 else
@@ -195,7 +196,7 @@ namespace EmployeeLeaveSystemFinal
                                     Console.WriteLine("List is Empty");
                                     Console.ReadKey();
                                     Console.Clear();
-
+                                    SubMenu.AdminSelection();
                                 }
                                 else
                                 {
