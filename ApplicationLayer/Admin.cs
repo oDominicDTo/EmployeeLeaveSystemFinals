@@ -30,42 +30,6 @@ namespace ApplicationLayer
             return returnValid;
 
         }
-    
-
-        /*   public static bool ValidateID(string EmployeeID)
-          {
-              bool returnValid = false;
-               List<string> lines = File.ReadAllLines(Data.data_path_e).ToList();
-
-              foreach (string line in lines)
-               {
-
-                   if (Regex.IsMatch(line,input))
-                   {
-
-                       returnValid = true;
-
-                   }
-                   else { returnValid = false; }
-
-                  var input = "|" + EmployeeID;
-
-                 foreach (string line in lines)
-                      {
-
-                         if (line.Contains(input))
-                       {
-
-                   //returnValid = true;
-                   return "1";
-               }
-               else 
-               {
-                   //returnValid = false;
-                   return "0";
-               }
-           }*/
-       
 
         public static string ViewSickLeaveEmployee()
         {
